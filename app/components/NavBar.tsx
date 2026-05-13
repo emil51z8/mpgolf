@@ -76,8 +76,6 @@ function NavBar() {
           ✕
         </button>
 
-        <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Navigation</p>
-
         {links.map(({ href, label }) => (
           <Link
             key={href}

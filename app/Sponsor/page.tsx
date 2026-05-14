@@ -182,7 +182,7 @@ export default function Sponsors() {
             </p>
             <div className="grid md:grid-cols-1 gap-4">
               <a
-                href="mailto:mpgfolf@gmail.com"
+                href="mailto:magnusrudpetersen03@gmail.com"
                 className="inline-block bg-blue-400 text-white text-sm font-semibold px-6 py-3 rounded-xl hover:bg-gray-700 transition"
               >
                 magnusrudpetersen03@gmail.com

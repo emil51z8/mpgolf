@@ -24,6 +24,12 @@ const packages = [
     color: "from-yellow-500 to-yellow-400",
     badge: "bg-yellow-100 text-yellow-800",
   },
+  {
+    name: "🎉 Hovedsponsor 🎉",
+    price: "50.000 kr.",
+    color: "from-blue-900 to-blue-700",
+    badge: "bg-blue-100 text-blue-900",
+  }
 ];
 
 export default function Home() {
@@ -65,7 +71,7 @@ export default function Home() {
         </div>
 
         {/* Mini pakkekort — 1 kolonne mobil, 3 på desktop */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 md:gap-6 mb-8">
           {packages.map((pkg) => (
             <div
               key={pkg.name}

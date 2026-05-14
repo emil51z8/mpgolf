@@ -23,7 +23,7 @@ export default function Sponsors() {
       border: "border-slate-400",
       badge: "bg-slate-100 text-slate-700",
       features: [
-        "Invitation til årligt sponsorarrangement — 18 huller, mad & drikke (1-3 pers.)",
+        "Invitation til årligt sponsorarrangement - 18 huller, mad & drikke (1-3 pers.)",
         "Fremhævet eksponering på mine facebook opslag - og på min hjemmeside",
       ],
       highlight: true,
@@ -38,7 +38,7 @@ export default function Sponsors() {
       features: [
         "Logo på cap eller venstre ærme",
         "Én årlig konsultation vedrørende hvordan jeg kan hjælpe med ekstra branding af din virksomhed",
-        "Invitation til årligt sponsorarrangement — 18 huller, mad & drikke (1-4 pers.)",
+        "Invitation til årligt sponsorarrangement - 18 huller, mad & drikke (1-4 pers.)",
         "Fremhævet eksponering på mine facebook opslag - og på min hjemmeside",
       ],
       highlight: false,
@@ -52,11 +52,11 @@ export default function Sponsors() {
       badge: "bg-blue-100 text-blue-900",
       features: [
         "Logo på højre ærme",
-        "Én årlig golfrunde med mig på Great Northern — mad & drikke efter runden samt tips og tricks undervejs (1-3 pers.)",
+        "Én årlig golfrunde\n med mig på Great Northern - mad & drikke efter runden samt tips og tricks undervejs (1-3 pers.)",
         "Én årlig konsultation vedrørende hvordan jeg kan hjælpe med ekstra branding af din virksomhed",
-        "Invitation til årligt sponsorarrangement — 18 huller, mad & drikke (1-4 pers.)",
+        "Invitation til årligt sponsorarrangement - 18 huller, mad & drikke (1-4 pers.)",
         "Fremhævet eksponering på mine facebook opslag - og på min hjemmeside",
-        "Yderligere goder kan aftales"
+        "Yderligere fordele kan aftales"
       ],
       highlight: false,
     },
@@ -164,7 +164,7 @@ export default function Sponsors() {
                             />
                           </svg>
                         </span>
-                        <span className="leading-snug">{feature}</span>
+                        <span className="leading-snug whitespace-pre-line">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -178,7 +178,7 @@ export default function Sponsors() {
               Ønsker du en skræddersyet aftale?
             </p>
             <p className="text-gray-800 font-semibold text-base mb-4">
-              Kontakt mig direkte — så finder vi en løsning der passer til dig.
+              Kontakt mig direkte - så finder vi en løsning der passer til dig.
             </p>
             <div className="grid md:grid-cols-1 gap-4">
               <a

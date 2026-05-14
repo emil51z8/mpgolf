@@ -1,13 +1,11 @@
 import Image from "next/image";
-import MP8 from "../images/MP8.jpeg"
+import MP8 from "../images/MP8.jpeg";
 import SponsorBtn from "../components/sponsorBtn";
 
 export default function About() {
   return (
     <div className="bg-white min-h-screen flex flex-col items-center justify-center px-4 py-12">
-      
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
-        
         {/* Tekst boks */}
         <div className="bg-gray-50 p-8 rounded-2xl shadow-xl">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
@@ -15,22 +13,29 @@ export default function About() {
           </h1>
 
           <p className="text-gray-600 leading-relaxed space-y-4">
-            Hej! Jeg er en golfamateur med store ambitioner inden for golfsporten. 
-            Jeg har dedikeret mig til at udvikle mine færdigheder og håber på at kunne konkurrere på højeste niveau.
-
-            <br /><br />
-
-            Mit mål er at blive en professionel golfspiller og repræsentere Danmark internationalt. 
-            Jeg træner intensivt flere gange ugentligt og deltager regelmæssigt i turneringer for at forbedre min teknik og mentale styrke.
-
-            <br /><br />
-
-            Mit handicap er konstant faldende, og jeg har allerede opnået flere gode placeringer i nationale og regionale turneringer. 
-            Jeg søger nu sponsorbindinger, der kan støtte min karriere og give mig mulighed for at fokusere fuldt ud på golfsporten.
-
-            <br /><br />
-
-            Med den rette sponsorstøtte tror jeg, at jeg kan nå internationale forventninger og skabe en succesfuld professionel karriere.
+            Hej, jeg hedder Magnus Rud Petersen og er en 22-årig
+            amatørgolfspiller fra Danmark med store drømme og ambitioner om at
+            nå verdenstoppen inden for golfsporten.
+            <br />
+            <br />
+            Til dagligt konkurrerer jeg på de danske amatørrangliste-turneringer
+            og deltager løbende i udvalgte turneringer på Ecco Touren, hvor
+            jeg måler mig med nogle af de bedste spillere i Skandinavien. Hver
+            eneste dag bruger jeg timer på at finpudse mit spil - både teknisk
+            og mentalt - fordi jeg ved at vejen til toppen kræver dedikation og
+            disciplin uden kompromiser.
+            <br />
+            <br />
+            Mit langsigtede mål er klart - at opnå kategori til DP World Tour
+            inden 2030. Det er en ambition jeg tager seriøst, og som driver mig
+            fremad hver dag. Jeg tror fuldt og fast på
+            at jeg med den rette støtte og de rette rammer kan nå derhen.
+            <br />
+            <br />
+            Som sponsor bliver du en del af den rejse. Du får ikke blot
+            eksponering - du investerer i en spiller der arbejder hårdt hver dag
+            for at nå sit mål, og som ønsker at tage sine sponsorer med hele
+            vejen.
           </p>
         </div>
 
@@ -45,7 +50,6 @@ export default function About() {
             loading="eager"
           />
         </div>
-
       </div>
       <div className="mt-8">
         <SponsorBtn />

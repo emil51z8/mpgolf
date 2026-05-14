@@ -5,50 +5,58 @@ export default function Sponsors() {
   const packages = [
     {
       name: "Bronze",
-      price: "2.500 kr.",
+      price: "5.000 kr.",
       period: "/ år",
       color: "from-amber-700 to-amber-500",
       border: "border-amber-400",
       badge: "bg-amber-100 text-amber-800",
       features: [
-        "Logo på min golfbag",
-        "Nævnelse på sociale medier (2x/år)",
-        "Tak i turneringsprogrammer",
-        "Digitalt sponsorcertifikat",
+        "Fremhævet eksponering på mine facebook opslag - og på min hjemmeside",
       ],
       highlight: false,
     },
     {
       name: "Sølv",
-      price: "6.000 kr.",
+      price: "10.000 kr.",
       period: "/ år",
       color: "from-slate-500 to-slate-400",
       border: "border-slate-400",
       badge: "bg-slate-100 text-slate-700",
       features: [
-        "Alt i Bronze-pakken",
-        "Logo på golftrøje (ærme)",
-        "Månedlige opdateringer og resultater",
-        "Nævnelse på sociale medier (6x/år)",
-        "Foto med sponsor ved turneringer",
+        "Invitation til årligt sponsorarrangement — 18 huller, mad & drikke (1-3 pers.)",
+        "Fremhævet eksponering på mine facebook opslag - og på min hjemmeside",
       ],
       highlight: true,
     },
     {
       name: "Guld",
-      price: "12.000 kr.",
+      price: "20.000 kr.",
       period: "/ år",
       color: "from-yellow-500 to-yellow-400",
       border: "border-yellow-400",
       badge: "bg-yellow-100 text-yellow-800",
       features: [
-        "Alt i Sølv-pakken",
-        "Stort logo på golftrøje (bryst)",
-        "Logo på cap og taske",
-        "Ugentlige opdateringer og resultater",
-        "Eksklusiv omtale på sociale medier",
-        "VIP-invitation til udvalgte turneringer",
-        "Personligt møde og netværksmuligheder",
+        "Logo på cap eller venstre ærme",
+        "Én årlig konsultation vedrørende hvordan jeg kan hjælpe med ekstra branding af din virksomhed",
+        "Invitation til årligt sponsorarrangement — 18 huller, mad & drikke (1-4 pers.)",
+        "Fremhævet eksponering på mine facebook opslag - og på min hjemmeside",
+      ],
+      highlight: false,
+    },
+    {
+      name: "🎉 Hovedsponsor 🎉",
+      price: "50.000 kr.",
+      period: "/ år",
+      color: "from-blue-900 to-blue-700",
+      border: "border-blue-400",
+      badge: "bg-blue-100 text-blue-900",
+      features: [
+        "Logo på højre ærme",
+        "Én årlig golfrunde med mig på Great Northern — mad & drikke efter runden samt tips og tricks undervejs (1-3 pers.)",
+        "Én årlig konsultation vedrørende hvordan jeg kan hjælpe med ekstra branding af din virksomhed",
+        "Invitation til årligt sponsorarrangement — 18 huller, mad & drikke (1-4 pers.)",
+        "Fremhævet eksponering på mine facebook opslag - og på min hjemmeside",
+        "Yderligere goder kan aftales"
       ],
       highlight: false,
     },
@@ -69,12 +77,12 @@ export default function Sponsors() {
               på baner i hele Danmark – og forhåbentlig snart internationalt.
             </p>
             <p className="text-gray-600 leading-relaxed mt-4">
-              Som sponsor får du synlighed på tøj, udstyr og sociale medier, og
-              du bliver en del af min rejse mod toppen af dansk og international
-              amatørgolf.
+              Som sponsor kan du få eksponering på tøj og sociale medier, og du
+              bliver en del af min rejse mod toppen af dansk og international
+              golf.
             </p>
             <a
-              href="mailto:mpgfolf@gmail.com"
+              href="mailto:magnusrudpetersen03@gmail.com"
               className="inline-block mt-6 bg-gray-800 text-white text-sm font-semibold px-6 py-3 rounded-xl hover:bg-gray-700 transition"
             >
               Kontakt mig
@@ -102,7 +110,7 @@ export default function Sponsors() {
             Sponsorpakker
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8 items-stretch">
+          <div className="grid md:grid-cols-4 gap-8 items-stretch">
             {packages.map((pkg) => (
               <div
                 key={pkg.name}
@@ -135,7 +143,7 @@ export default function Sponsors() {
                 </div>
 
                 <div className="p-8 flex flex-col flex-1">
-                  <ul className="space-y-3 flex-1">
+                  <ul className="space-y-4 flex-1">
                     {pkg.features.map((feature) => (
                       <li
                         key={feature}
@@ -170,14 +178,22 @@ export default function Sponsors() {
               Ønsker du en skræddersyet aftale?
             </p>
             <p className="text-gray-800 font-semibold text-base mb-4">
-              Kontakt mig direkte — jeg finder en løsning der passer til dig.
+              Kontakt mig direkte — så finder vi en løsning der passer til dig.
             </p>
-            <a
-              href="mailto:mpgfolf@gmail.com"
-              className="inline-block bg-blue-400 text-white text-sm font-semibold px-6 py-3 rounded-xl hover:bg-gray-700 transition"
-            >
-              mpgfolf@gmail.com
-            </a>
+            <div className="grid md:grid-cols-1 gap-4">
+              <a
+                href="mailto:mpgfolf@gmail.com"
+                className="inline-block bg-blue-400 text-white text-sm font-semibold px-6 py-3 rounded-xl hover:bg-gray-700 transition"
+              >
+                magnusrudpetersen03@gmail.com
+              </a>
+              <a
+                href="tel:+4561132199"
+                className="inline-block bg-blue-400 text-white text-sm font-semibold px-6 py-3 rounded-xl hover:bg-gray-700 transition"
+              >
+                +45 61 13 21 99
+              </a>
+            </div>
           </div>
         </div>
       </div>

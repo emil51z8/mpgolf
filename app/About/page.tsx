@@ -1,5 +1,5 @@
 import Image from "next/image";
-import MP6 from "../images/MP6.jpeg"
+import MP8 from "../images/MP8.jpeg"
 import SponsorBtn from "../components/sponsorBtn";
 
 export default function About() {
@@ -37,7 +37,7 @@ export default function About() {
         {/* Billede */}
         <div className="relative w-full h-[400px] md:h-[500px]">
           <Image
-            src={MP6}
+            src={MP8}
             alt="Magnus billede"
             fill
             sizes="(max-width: 600px) 100vw, 50vw"

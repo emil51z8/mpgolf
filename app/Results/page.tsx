@@ -6,15 +6,16 @@ import SponsorBtn from "../components/sponsorBtn";
 import MP9 from "../images/MP9.jpeg";
 
 const stats = [
-  { label: "Best Rank", value: "1455" },
-  { label: "Wins", value: "1" },
-  { label: "Top 10 Finishes", value: "4" },
+  { label: "Bedste placering", value: "1455" },
+  { label: "Sejre", value: "1" },
+  { label: "Top 10 placeringer", value: "4" },
   { label: "Divisor", value: "8" },
-  { label: "Applied Divisor", value: "8" },
-  { label: "Counting Events", value: "8" },
+  { label: "Anvendt Divisor", value: "8" },
+  { label: "Turneringer spillet", value: "8" },
 ];
 
 const events = [
+  { week: "19/2026", event: "Royal Unibrew Championship @ Royal Oak",               finish: 28,  type: "Pro", power: "230.5031", format: "S/P", divisor: 1, ptsAvg: "3.7838" },
   { week: "15/2026", event: "Lubker Championship by Titleist",                        finish: 15, type: "All Ages", power: "48.8185", format: "S/P", divisor: 1, ptsAvg: "3.3478" },
   { week: "38/2025", event: "DGU Elite Tour Finale Herrer & Drenge",                  finish: 18, type: "All Ages", power: "55.9823", format: "S/P", divisor: 1, ptsAvg: "3.1594" },
   { week: "37/2025", event: "Esbjerg Open by Freja",                                  finish: 80, type: "Pro",      power: "216.9124", format: "S/P", divisor: 1, ptsAvg: "2.4322" },
@@ -44,7 +45,7 @@ export default function Results() {
             </h1>
             <p className="text-gray-600 leading-relaxed">
               Her finder du mine turneringsresultater og WAGR-ranking. 
-              Jeg deltager løbende i elite- og amatørturneringer i Danmark 
+              Jeg deltager løbende i elite- og pro turneringer i Danmark 
               og arbejder målrettet på at forbedre min verdensrangliste-placering.
             </p>
             <Link
@@ -71,8 +72,7 @@ export default function Results() {
         {/* Statistics */}
         <div className="bg-gray-50 rounded-2xl shadow-xl overflow-hidden">
           <div className="flex items-center justify-between px-6 pt-5 pb-3 border-b border-gray-200">
-            <h2 className="text-base font-semibold text-gray-800">Statistics</h2>
-            <span className="text-xs text-gray-400">Last 104 weeks</span>
+            <h2 className="text-base font-semibold text-gray-800">Statistikker</h2>
           </div>
           <div className="grid grid-cols-3 sm:grid-cols-6 divide-x divide-gray-200">
             {stats.map((s) => (
@@ -89,9 +89,6 @@ export default function Results() {
           <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200">
             <h2 className="text-base font-semibold text-gray-800">Events</h2>
             <div className="flex items-center gap-3">
-              <span className="text-xs bg-gray-800 text-white px-3 py-1 rounded-full font-medium">
-                Counting
-              </span>
               <span className="text-xs text-gray-400">2025–2026</span>
             </div>
           </div>

@@ -21,10 +21,10 @@ function Footer() {
         <div>
           <h3 className="font-semibold mb-2">Kontakt</h3>
           <a
-            href="mailto:mpgfolf@gmail.com"
+            href="mailto:magnusrudpetersen03@gmail.com"
             className="block text-gray-600 hover:text-gray-900 transition"
           >
-            mpgfolf@gmail.com
+            magnusrudpetersen03@gmail.com
           </a>
           <a
             href="tel:+4561132199"

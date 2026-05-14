@@ -4,17 +4,17 @@ import facebook from "../images/facebook.png";
 import egr from "../images/egr-logo.png";
 import linkedin from "../images/linkedin.png";
 import mail from "../images/mail.png";
-import phone from "../images/phone.jpg";
+import phone from "../images/phone.png";
 import wagr from "../images/WAGR.png";
 
 const socials = [
   { src: instagram, alt: "Instagram", href: "https://www.instagram.com/_magnusrud_/" },
-  { src: facebook,  alt: "Facebook",  href: "https://www.facebook.com/" },
-  { src: egr,       alt: "EGR",       href: "https://www.instagram.com/_magnusrud_/" },
-  { src: linkedin,  alt: "LinkedIn",  href: "https://www.linkedin.com/" },
-  { src: mail,      alt: "Mail",      href: "mailto:mpgfolf@gmail.com" },
+  { src: facebook,  alt: "Facebook",  href: "https://www.facebook.com/profile.php?id=61589616546193" },
+  { src: egr,       alt: "EGR",       href: "https://www.europeangolfrankings.com/players/31122" },
+  { src: linkedin,  alt: "LinkedIn",  href: "https://www.linkedin.com/in/magnus-rud-petersen-golf-901756321/" },
+  { src: mail,      alt: "Mail",      href: "mailto:magnusrudpetersen03@gmail.com" },
   { src: phone,     alt: "Telefon",   href: "tel:+4561132199" },
-  { src: wagr,      alt: "WAGR",      href: "https://www.wagr.com/" },
+  { src: wagr,      alt: "WAGR",      href: "https://www.wagr.com/playerprofile/magnus-rud-petersen-44010" },
 ];
 
 function Socials() {

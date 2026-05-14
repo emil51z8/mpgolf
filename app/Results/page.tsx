@@ -6,12 +6,12 @@ import SponsorBtn from "../components/sponsorBtn";
 import MP9 from "../images/MP9.jpeg";
 
 const stats = [
-  { label: "Best Rank", value: "2104" },
+  { label: "Best Rank", value: "1455" },
   { label: "Wins", value: "1" },
   { label: "Top 10 Finishes", value: "4" },
-  { label: "Divisor", value: "7" },
+  { label: "Divisor", value: "8" },
   { label: "Applied Divisor", value: "8" },
-  { label: "Counting Events", value: "7" },
+  { label: "Counting Events", value: "8" },
 ];
 
 const events = [

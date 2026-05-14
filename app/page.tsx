@@ -7,20 +7,20 @@ import SponsorBtn from "./components/sponsorBtn";
 const packages = [
   {
     name: "Bronze",
-    price: "2.500 kr.",
+    price: "5.000 kr.",
     color: "from-amber-700 to-amber-500",
     badge: "bg-amber-100 text-amber-800",
   },
   {
     name: "Sølv",
-    price: "6.000 kr.",
+    price: "10.000 kr.",
     color: "from-slate-500 to-slate-400",
     badge: "bg-slate-100 text-slate-700",
     highlight: true,
   },
   {
     name: "Guld",
-    price: "12.000 kr.",
+    price: "20.000 kr.",
     color: "from-yellow-500 to-yellow-400",
     badge: "bg-yellow-100 text-yellow-800",
   },
@@ -45,7 +45,7 @@ export default function Home() {
             Magnus Rud Petersen
           </h1>
           <h2 className="text-white text-base sm:text-lg md:text-2xl mt-3 drop-shadow-md max-w-sm sm:max-w-none">
-            Ung talentfuld golfspiller med store ambitioner
+            Overvejer du at blive sponsor for en talentfuld golfspiller?
           </h2>
         </div>
       </div>
@@ -85,7 +85,7 @@ export default function Home() {
               </div>
               <div className="px-5 py-4">
                 <p className="text-xl sm:text-2xl font-bold text-gray-800">{pkg.price}</p>
-                <p className="text-xs text-gray-400 mt-0.5">per år</p>
+                <p className="text-xs text-gray-400 mt-0.5">Pr. år</p>
               </div>
             </div>
           ))}

@@ -37,7 +37,7 @@ export default function Home() {
     <div className="bg-white min-h-screen">
 
       {/* Hero — kortere på mobil */}
-      <div className="relative w-full h-[350px] sm:h-[420px] md:h-[500px]">
+      <div className="relative w-full h-[230px] sm:h-[420px] md:h-[500px]">
         <Image
           src={MP5}
           alt="Magnus billede 1"

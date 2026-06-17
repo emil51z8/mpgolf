@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import {
   FaInstagram,
   FaFacebookF,
@@ -70,6 +70,27 @@ const socials: Social[] = [
 
 function Socials() {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+
+  const updateArrows = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 1);
+    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 1);
+  }, []);
+
+  useEffect(() => {
+    updateArrows();
+    const el = scrollRef.current;
+    if (!el) return;
+    el.addEventListener("scroll", updateArrows, { passive: true });
+    window.addEventListener("resize", updateArrows);
+    return () => {
+      el.removeEventListener("scroll", updateArrows);
+      window.removeEventListener("resize", updateArrows);
+    };
+  }, [updateArrows]);
 
   const scroll = (dir: "left" | "right") => {
     if (!scrollRef.current) return;
@@ -82,23 +103,27 @@ function Socials() {
 
   return (
     <div className="relative mt-8 md:mt-10 px-4">
-      {/* Pile */}
-      <button
-        type="button"
-        onClick={() => scroll("left")}
-        aria-label="Scroll til venstre"
-        className="absolute left-0 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow-md ring-1 ring-gray-200 hover:bg-gray-50 hidden sm:block"
-      >
-        <FaChevronLeft className="h-4 w-4 text-gray-700" />
-      </button>
-      <button
-        type="button"
-        onClick={() => scroll("right")}
-        aria-label="Scroll til højre"
-        className="absolute right-0 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow-md ring-1 ring-gray-200 hover:bg-gray-50 hidden sm:block"
-      >
-        <FaChevronRight className="h-4 w-4 text-gray-700" />
-      </button>
+      {/* Pile - vises kun når der reelt er noget at scrolle til */}
+      {canScrollLeft && (
+        <button
+          type="button"
+          onClick={() => scroll("left")}
+          aria-label="Scroll til venstre"
+          className="absolute left-0 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow-md ring-1 ring-gray-200 hover:bg-gray-50 hidden sm:block"
+        >
+          <FaChevronLeft className="h-4 w-4 text-gray-700" />
+        </button>
+      )}
+      {canScrollRight && (
+        <button
+          type="button"
+          onClick={() => scroll("right")}
+          aria-label="Scroll til højre"
+          className="absolute right-0 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow-md ring-1 ring-gray-200 hover:bg-gray-50 hidden sm:block"
+        >
+          <FaChevronRight className="h-4 w-4 text-gray-700" />
+        </button>
+      )}
 
       {/* Carousel */}
       <div

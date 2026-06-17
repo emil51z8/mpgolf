@@ -103,7 +103,7 @@ function Socials() {
       {/* Carousel */}
       <div
         ref={scrollRef}
-        className="flex gap-4 sm:gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory px-1 py-4 sm:px-12 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        className="flex gap-4 sm:gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory px-1 py-4 sm:px-12 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:[&>*]:first:ml-auto sm:[&>*]:last:mr-auto"
       >
         {socials.map(({ alt, href, Icon, img, brand }) => (
           <a

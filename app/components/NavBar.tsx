@@ -3,8 +3,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
+// fjerner afsluttende "/" men bevarer "/" for forsiden
+const normalize = (path: string) =>
+  path !== "/" && path.endsWith("/") ? path.slice(0, -1) : path;
+
 function NavBar() {
   const pathname = usePathname();
+  const current = normalize(pathname);
   const [open, setOpen] = useState(false);
 
   const links = [
@@ -31,7 +36,7 @@ function NavBar() {
                 <Link
                   href={href}
                   className={`transition duration-200 ${
-                    pathname === href ? "text-blue-400" : "text-gray-700 hover:text-blue-400"
+                    current === normalize(href) ? "text-blue-400" : "text-gray-700 hover:text-blue-400"
                   }`}
                 >
                   {label}
@@ -82,7 +87,7 @@ function NavBar() {
             href={href}
             onClick={() => setOpen(false)}
             className={`text-xl font-semibold transition duration-200 ${
-              pathname === href ? "text-blue-400" : "text-gray-700 hover:text-blue-400"
+              current === normalize(href) ? "text-blue-400" : "text-gray-700 hover:text-blue-400"
             }`}
           >
             {label}

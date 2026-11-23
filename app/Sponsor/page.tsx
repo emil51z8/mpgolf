@@ -5,7 +5,7 @@ export default function Sponsors() {
   const packages = [
     {
       name: "Bronze",
-      price: "5.000 kr.",
+      price: "10.000 kr.",
       period: "/ år",
       color: "from-amber-700 to-amber-500",
       border: "border-amber-400",
@@ -17,7 +17,7 @@ export default function Sponsors() {
     },
     {
       name: "Sølv",
-      price: "10.000 kr.",
+      price: "25.000 kr.",
       period: "/ år",
       color: "from-slate-500 to-slate-400",
       border: "border-slate-400",
@@ -30,7 +30,7 @@ export default function Sponsors() {
     },
     {
       name: "Guld",
-      price: "20.000 kr.",
+      price: "75.000 kr.",
       period: "/ år",
       color: "from-yellow-500 to-yellow-400",
       border: "border-yellow-400",
@@ -45,7 +45,7 @@ export default function Sponsors() {
     },
     {
       name: "🎉 Hovedsponsor 🎉",
-      price: "50.000 kr.",
+      price: "150.000 kr.",
       period: "/ år",
       color: "from-blue-900 to-blue-700",
       border: "border-blue-400",

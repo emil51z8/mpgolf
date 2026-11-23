@@ -7,26 +7,26 @@ import SponsorBtn from "./components/sponsorBtn";
 const packages = [
   {
     name: "Bronze",
-    price: "5.000 kr.",
+    price: "10.000 kr.",
     color: "from-amber-700 to-amber-500",
     badge: "bg-amber-100 text-amber-800",
   },
   {
     name: "Sølv",
-    price: "10.000 kr.",
+    price: "25.000 kr.",
     color: "from-slate-500 to-slate-400",
     badge: "bg-slate-100 text-slate-700",
     highlight: true,
   },
   {
     name: "Guld",
-    price: "20.000 kr.",
+    price: "75.000 kr.",
     color: "from-yellow-500 to-yellow-400",
     badge: "bg-yellow-100 text-yellow-800",
   },
   {
     name: "🎉 Hovedsponsor 🎉",
-    price: "50.000 kr.",
+    price: "150.000 kr.",
     color: "from-blue-900 to-blue-700",
     badge: "bg-blue-100 text-blue-900",
   }
